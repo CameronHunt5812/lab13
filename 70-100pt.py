@@ -28,19 +28,19 @@ class MyApp:
        	    self.myContainer1.pack()
        	    self.up = Button(self.myContainer1)
        	    self.up.configure(text="up", background= "green")
-       	    self.up.grid(row=0,column=0)
+       	    self.up.grid(row=0,column=1)
        	    
        	    self.right = Button(self.myContainer1)
        	    self.right.configure(text="right", background= "green")
-       	    self.right.grid(row=0,column=2)
+       	    self.right.grid(row=1,column=2)
        	    
        	    self.left = Button(self.myContainer1)
        	    self.left.configure(text="left", background= "green")
-       	    self.left.grid(row=0,column=1)
+       	    self.left.grid(row=1,column=0)
        	    
        	    self.doun = Button(self.myContainer1)
        	    self.doun.configure(text="doun", background= "green")
-       	    self.doun.grid(row=0,column=3)
+       	    self.doun.grid(row=1,column=1)
        	    # Bind an event to the first button
        	    self.up.bind("<Button-1>", self.upClicked)
        	    self.right.bind("<Button-1>", self.rightClicked)
